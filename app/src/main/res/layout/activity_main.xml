@@ -1,0 +1,43 @@
+<!-- activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comic Shop"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/filterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:text="Фильтр" />
+
+    <Button
+        android:id="@+id/openCartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/filterButton"
+        android:text="Корзина" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/comicsRecyclerView"
+        android:layout_width="395dp"
+        android:layout_height="598dp"
+        android:layout_below="@+id/filterButton"
+        android:layout_marginTop="50dp" />
+
+</RelativeLayout>
